@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD15C09227F4731A00B0F054 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD15C09127F4731A00B0F054 /* TabBar.swift */; };
 		DD2EE8BE27BCE81000C64A24 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2EE8BD27BCE81000C64A24 /* Styles.swift */; };
 		DD2EE8C027BD0F8600C64A24 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */; };
 		DD627B9E27F384D7008EDAB5 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD627B9D27F384D7008EDAB5 /* HexagonView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD15C09127F4731A00B0F054 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		DD2EE8BD27BCE81000C64A24 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DD627B9D27F384D7008EDAB5 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				DD94911E27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift */,
 				DD94912027A2C11F00BE60FC /* ContentView.swift */,
 				DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */,
+				DD15C09127F4731A00B0F054 /* TabBar.swift */,
 				DD627B9F27F38C48008EDAB5 /* BlobView.swift */,
 				DD627B9D27F384D7008EDAB5 /* HexagonView.swift */,
 				DD2EE8BD27BCE81000C64A24 /* Styles.swift */,
@@ -275,6 +278,7 @@
 				DD627BA027F38C48008EDAB5 /* BlobView.swift in Sources */,
 				DD94912127A2C11F00BE60FC /* ContentView.swift in Sources */,
 				DD94911F27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift in Sources */,
+				DD15C09227F4731A00B0F054 /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
