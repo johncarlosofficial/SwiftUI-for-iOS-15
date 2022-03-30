@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BlobView: View {
+    @State var appear = false
+    
     var body: some View {
         TimelineView(.animation) { timeline in
             
@@ -21,6 +23,12 @@ struct BlobView: View {
                 context.fill(path(in: CGRect(x: 0, y: 0, width: size.width, height: size.height), x: x, x2: x2), with: .linearGradient(Gradient(colors: [.pink, .blue]), startPoint: CGPoint(x: 0, y: 0), endPoint: CGPoint(x: 400, y: 400)))
             }
             .frame(width: 400, height: 414)
+            .rotationEffect(.degrees(appear ? 360 : 0))
+        }
+        .onAppear{
+            withAnimation(.linear(duration: 20).repeatForever(autoreverses: true)){
+                appear = true
+            }
         }
 
     }
