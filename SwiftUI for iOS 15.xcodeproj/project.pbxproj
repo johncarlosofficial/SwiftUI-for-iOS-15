@@ -20,6 +20,7 @@
 		DD94913027A2C12000BE60FC /* SwiftUI_for_iOS_15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94912F27A2C12000BE60FC /* SwiftUI_for_iOS_15Tests.swift */; };
 		DD94913A27A2C12000BE60FC /* SwiftUI_for_iOS_15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94913927A2C12000BE60FC /* SwiftUI_for_iOS_15UITests.swift */; };
 		DD94913C27A2C12000BE60FC /* SwiftUI_for_iOS_15UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94913B27A2C12000BE60FC /* SwiftUI_for_iOS_15UITestsLaunchTests.swift */; };
+		DDB90B7D27F5BADD00BF87D7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB90B7C27F5BADD00BF87D7 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		DD94913527A2C12000BE60FC /* SwiftUI for iOS 15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI for iOS 15UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94913927A2C12000BE60FC /* SwiftUI_for_iOS_15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_for_iOS_15UITests.swift; sourceTree = "<group>"; };
 		DD94913B27A2C12000BE60FC /* SwiftUI_for_iOS_15UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_for_iOS_15UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDB90B7C27F5BADD00BF87D7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				DD94911E27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift */,
-				DD94912027A2C11F00BE60FC /* ContentView.swift */,
-				DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */,
-				DD15C09127F4731A00B0F054 /* TabBar.swift */,
-				DD30315727F4838F0008A4B0 /* Tab.swift */,
-				DD627B9F27F38C48008EDAB5 /* BlobView.swift */,
-				DD627B9D27F384D7008EDAB5 /* HexagonView.swift */,
-				DD2EE8BD27BCE81000C64A24 /* Styles.swift */,
+				DDB90B7E27F5BD3600BF87D7 /* Navigation */,
+				DDB90B7F27F5BD6100BF87D7 /* Views */,
+				DDB90B8027F5BD8000BF87D7 /* Components */,
+				DDB90B8127F5BDA900BF87D7 /* Model */,
+				DDB90B8227F5BDDB00BF87D7 /* Styles */,
 				DD94912227A2C12000BE60FC /* Assets.xcassets */,
 				DD94912427A2C12000BE60FC /* Preview Content */,
 			);
@@ -143,6 +143,49 @@
 				DD94913B27A2C12000BE60FC /* SwiftUI_for_iOS_15UITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI for iOS 15UITests";
+			sourceTree = "<group>";
+		};
+		DDB90B7E27F5BD3600BF87D7 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DD15C09127F4731A00B0F054 /* TabBar.swift */,
+				DD94912027A2C11F00BE60FC /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DDB90B7F27F5BD6100BF87D7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDB90B7C27F5BADD00BF87D7 /* HomeView.swift */,
+				DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDB90B8027F5BD8000BF87D7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD627B9F27F38C48008EDAB5 /* BlobView.swift */,
+				DD627B9D27F384D7008EDAB5 /* HexagonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DDB90B8127F5BDA900BF87D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD30315727F4838F0008A4B0 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDB90B8227F5BDDB00BF87D7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				DD2EE8BD27BCE81000C64A24 /* Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB90B7D27F5BADD00BF87D7 /* HomeView.swift in Sources */,
 				DD2EE8C027BD0F8600C64A24 /* AccountView.swift in Sources */,
 				DD627B9E27F384D7008EDAB5 /* HexagonView.swift in Sources */,
 				DD2EE8BE27BCE81000C64A24 /* Styles.swift in Sources */,
