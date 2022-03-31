@@ -26,6 +26,7 @@
 		DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB90B8727F5CF6400BF87D7 /* PreferenceKeys.swift */; };
 		DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */; };
 		DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752B27F5DE2600FCEABD /* Course.swift */; };
+		DDD2752E27F5E82300FCEABD /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752D27F5E82300FCEABD /* MatchedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		DDB90B8727F5CF6400BF87D7 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		DDD2752B27F5DE2600FCEABD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		DDD2752D27F5E82300FCEABD /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 			children = (
 				DDB90B7C27F5BADD00BF87D7 /* HomeView.swift */,
 				DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */,
+				DDD2752D27F5E82300FCEABD /* MatchedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				DD2EE8C027BD0F8600C64A24 /* AccountView.swift in Sources */,
 				DD627B9E27F384D7008EDAB5 /* HexagonView.swift in Sources */,
 				DD2EE8BE27BCE81000C64A24 /* Styles.swift in Sources */,
+				DDD2752E27F5E82300FCEABD /* MatchedView.swift in Sources */,
 				DD30315827F4838F0008A4B0 /* Tab.swift in Sources */,
 				DDB90B8627F5C1C900BF87D7 /* NavigationBar.swift in Sources */,
 				DD627BA027F38C48008EDAB5 /* BlobView.swift in Sources */,
