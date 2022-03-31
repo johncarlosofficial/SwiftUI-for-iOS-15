@@ -41,20 +41,13 @@ struct FeaturedItem: View {
                 .padding(.all, 20.0)
                 .padding(.vertical, 20.0)
                 .frame(height: 350.0)
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+                .background(.ultraThinMaterial)
+                .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
         //        .cornerRadius(30.0)
         //        .mask(RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .padding(.horizontal, 20)
-                .shadow(color: Color("Shadow").opacity(0.3), radius: 10.0, x: 0, y: 10)
                 .strokeStyle()
                 .padding(.horizontal, 20)
-                .overlay(
-                    Image(course.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 230)
-                        .offset(x: 32, y: -82)
-            )
+                
     }
 }
 
