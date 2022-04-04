@@ -25,22 +25,25 @@ struct TabBar: View {
 //                    Text("Explore")
 //                }
 //        }
-        HStack{
-            buttons
-        }
-        .padding(.horizontal, 8)
-        .padding(.top, 14)
-        .frame(height: 88, alignment: .top)
-        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 34, style: .continuous))
-        .background(
-            background
-        )
-        .overlay(
-            overlay
-        )
-        .strokeStyle(cornerRadious: 34)
-        .frame(maxHeight: .infinity, alignment: .bottom)
+        GeometryReader { proxy in
+            let hasHomeIndicator = proxy.safeAreaInsets.bottom - 44 > 20
+            HStack{
+                buttons
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 14)
+            .frame(height: hasHomeIndicator ? 88 : 62, alignment: .top)
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: hasHomeIndicator ? 34 : 0, style: .continuous))
+            .background(
+                background
+            )
+            .overlay(
+                overlay
+            )
+            .strokeStyle(cornerRadious: hasHomeIndicator ? 34 : 0)
+            .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
+        }
     }
     
     var buttons: some View{
@@ -126,6 +129,6 @@ struct TabBar: View {
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
-.previewInterfaceOrientation(.portrait)
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }
