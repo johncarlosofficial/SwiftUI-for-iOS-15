@@ -30,6 +30,7 @@
 		DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */; };
 		DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752B27F5DE2600FCEABD /* Course.swift */; };
 		DDD2752E27F5E82300FCEABD /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752D27F5E82300FCEABD /* MatchedView.swift */; };
+		DDE3611D27FB1E8800113E9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3611C27FB1E8800113E9B /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		DDD2752B27F5DE2600FCEABD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		DDD2752D27F5E82300FCEABD /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		DDE3611C27FB1E8800113E9B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 				DD30315727F4838F0008A4B0 /* Tab.swift */,
 				DDB90B8727F5CF6400BF87D7 /* PreferenceKeys.swift */,
 				DDD2752B27F5DE2600FCEABD /* Course.swift */,
+				DDE3611C27FB1E8800113E9B /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				DDB90B8427F5BFC900BF87D7 /* FeaturedItem.swift in Sources */,
 				DD89544327F63D5A00157ADD /* Animations.swift in Sources */,
 				DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */,
+				DDE3611D27FB1E8800113E9B /* Model.swift in Sources */,
 				DD15C09227F4731A00B0F054 /* TabBar.swift in Sources */,
 				DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */,
 			);

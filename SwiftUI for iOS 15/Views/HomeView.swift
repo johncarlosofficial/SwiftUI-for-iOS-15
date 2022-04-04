@@ -13,6 +13,7 @@ struct HomeView: View {
     @State var show = false
     @State var showStatusBar = true
     @State var selectedID = UUID()
+    @EnvironmentObject var model: Model
     
     var body: some View {
         ZStack {
@@ -130,6 +131,7 @@ struct HomeView: View {
                 .onTapGesture {
                     withAnimation(.openCard){
                         show.toggle()
+                        model.showDetail.toggle()
                         showStatusBar = false
                         selectedID = course.id
                     }
@@ -154,5 +156,6 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .environmentObject(Model())
     }
 }
