@@ -29,6 +29,7 @@
 		DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB90B8727F5CF6400BF87D7 /* PreferenceKeys.swift */; };
 		DDC288F12816720900380CA0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC288F02816720900380CA0 /* SearchView.swift */; };
 		DDC288F32816799100380CA0 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC288F22816799100380CA0 /* Suggestion.swift */; };
+		DDCC10302817ECC200DF8FC5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */; };
 		DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */; };
 		DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752B27F5DE2600FCEABD /* Course.swift */; };
 		DDD2752E27F5E82300FCEABD /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752D27F5E82300FCEABD /* MatchedView.swift */; };
@@ -78,6 +79,7 @@
 		DDB90B8727F5CF6400BF87D7 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		DDC288F02816720900380CA0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		DDC288F22816799100380CA0 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		DDD2752B27F5DE2600FCEABD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		DDD2752D27F5E82300FCEABD /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				DDD2752D27F5E82300FCEABD /* MatchedView.swift */,
 				DD89544027F6319700157ADD /* CourseView.swift */,
 				DDC288F02816720900380CA0 /* SearchView.swift */,
+				DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				DD94911F27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift in Sources */,
 				DD89543F27F6303B00157ADD /* CourseItem.swift in Sources */,
 				DDB90B8427F5BFC900BF87D7 /* FeaturedItem.swift in Sources */,
+				DDCC10302817ECC200DF8FC5 /* SignUpView.swift in Sources */,
 				DD89544327F63D5A00157ADD /* Animations.swift in Sources */,
 				DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */,
 				DDE3611D27FB1E8800113E9B /* Model.swift in Sources */,

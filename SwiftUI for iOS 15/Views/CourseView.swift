@@ -28,7 +28,7 @@ struct CourseView: View {
             }
             .coordinateSpace(name: "scroll")
             .onAppear { model.showDetail = true }
-            .onDisappear { mode.showDetail = false }
+            .onDisappear { model.showDetail = false }
             .background(Color("Background"))
             .mask(RoundedRectangle(cornerRadius: viewState.width / 3.0, style: .continuous))
             .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
