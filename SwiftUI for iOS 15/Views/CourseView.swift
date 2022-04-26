@@ -26,6 +26,9 @@ struct CourseView: View {
                     .padding(.bottom, 200)
                     .opacity(appear[2] ? 1 : 0)
             }
+            .coordinateSpace(name: "scroll")
+            .onAppear { model.showDetail = true }
+            .onDisappear { mode.showDetail = false }
             .background(Color("Background"))
             .mask(RoundedRectangle(cornerRadius: viewState.width / 3.0, style: .continuous))
             .shadow(color: .black.opacity(0.3), radius: 30, x: 0, y: 10)
@@ -49,7 +52,7 @@ struct CourseView: View {
     
     var cover: some View {
         GeometryReader { proxy in
-            let scrollY = proxy.frame(in: .global).minY
+            let scrollY = proxy.frame(in: .named("scroll")).minY
             
             VStack {
                     Spacer()
