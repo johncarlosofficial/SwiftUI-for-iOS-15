@@ -18,7 +18,7 @@ struct SignUpView: View {
                 Text("Create an account")
                     .frame(maxWidth: .infinity)
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.angular)
             .tint(.accentColor)
             .controlSize(.large)
         }
@@ -36,5 +36,6 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView()
+            
     }
 }
