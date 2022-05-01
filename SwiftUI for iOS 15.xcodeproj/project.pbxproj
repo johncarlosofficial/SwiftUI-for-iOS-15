@@ -34,6 +34,7 @@
 		DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */; };
 		DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752B27F5DE2600FCEABD /* Course.swift */; };
 		DDD2752E27F5E82300FCEABD /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2752D27F5E82300FCEABD /* MatchedView.swift */; };
+		DDD9C295281E68DB0023B997 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD9C294281E68DB0023B997 /* InputStyle.swift */; };
 		DDE3611D27FB1E8800113E9B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE3611C27FB1E8800113E9B /* Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		DDD2752B27F5DE2600FCEABD /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		DDD2752D27F5E82300FCEABD /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
+		DDD9C294281E68DB0023B997 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
 		DDE3611C27FB1E8800113E9B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,6 +228,7 @@
 				DDD2752927F5D9BC00FCEABD /* AnimatableFontModifier.swift */,
 				DD89544227F63D5A00157ADD /* Animations.swift */,
 				DD303829281948410047B76E /* AngularButtonStyle.swift */,
+				DDD9C294281E68DB0023B997 /* InputStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				DDCC10302817ECC200DF8FC5 /* SignUpView.swift in Sources */,
 				DD89544327F63D5A00157ADD /* Animations.swift in Sources */,
 				DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */,
+				DDD9C295281E68DB0023B997 /* InputStyle.swift in Sources */,
 				DDE3611D27FB1E8800113E9B /* Model.swift in Sources */,
 				DD15C09227F4731A00B0F054 /* TabBar.swift in Sources */,
 				DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */,
