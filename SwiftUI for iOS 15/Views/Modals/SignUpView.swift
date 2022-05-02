@@ -1,13 +1,13 @@
 //
-//  SignInView.swift
+//  SignUpView.swift
 //  SwiftUI for iOS 15
 //
-//  Created by João Carlos Magalhães on 02/05/22.
+//  Created by João Carlos Magalhães on 26/04/22.
 //
 
 import SwiftUI
 
-struct SignInView: View {
+struct SignUpView: View {
     enum Field: Hashable {
     case email
     case password
@@ -24,7 +24,7 @@ struct SignInView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Sign in")
+            Text("Sign up")
                 .font(.largeTitle).bold()
             Text("Access 120+ hours of courses, tutorials and livesteams")
                 .font(.headline)
@@ -55,7 +55,7 @@ struct SignInView: View {
                 }
             
             Button {} label: {
-                Text("Sign in")
+                Text("Creat an account")
                     .frame(maxWidth: .infinity)
             }
             .font(.headline)
@@ -66,15 +66,19 @@ struct SignInView: View {
             .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
             
             Group {
+                Text("By clicking on ")
+                + Text("_Create an account_")
+                    .foregroundColor(.primary.opacity(0.7))
+                + Text(", you agree to our **Terms of Service** and **[Privacy Policy](https?..design.io)**")
                 
                 Divider()
                 
                 HStack {
-                    Text("No account yet?")
+                    Text("Already have an account?")
                     Button{
-                        model.selectedModal = .signUp
+                        model.selectedModal = .signIn
                     } label: {
-                           Text("**Sign up**")
+                           Text("**Sign in**")
                     }
 
                 }
@@ -95,9 +99,6 @@ struct SignInView: View {
         )
         .coordinateSpace(name: "container")
         .strokeStyle(cornerRadious: 30)
-        .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
-        .padding(20)
-        .background(Image("Blob 1").offset(x:200 ,y:-100))
         .onChange(of: focuseField){
             value in
             withAnimation{
@@ -119,10 +120,10 @@ struct SignInView: View {
     }
 }
 
-struct SignInView_Previews: PreviewProvider {
+struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            SignInView()
+            SignUpView()
                 .preferredColorScheme(.light)
                 .environmentObject(Model())
         }

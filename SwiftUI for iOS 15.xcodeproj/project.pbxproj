@@ -119,6 +119,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD363C69281FBA64009881FA /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */,
+				DD363C65281FB195009881FA /* ModalView.swift */,
+				DD363C67281FB213009881FA /* SignInView.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
 		DD94911227A2C11F00BE60FC = {
 			isa = PBXGroup;
 			children = (
@@ -197,9 +207,7 @@
 				DDD2752D27F5E82300FCEABD /* MatchedView.swift */,
 				DD89544027F6319700157ADD /* CourseView.swift */,
 				DDC288F02816720900380CA0 /* SearchView.swift */,
-				DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */,
-				DD363C65281FB195009881FA /* ModalView.swift */,
-				DD363C67281FB213009881FA /* SignInView.swift */,
+				DD363C69281FBA64009881FA /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";
