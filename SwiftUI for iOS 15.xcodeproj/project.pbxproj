@@ -12,6 +12,8 @@
 		DD2EE8C027BD0F8600C64A24 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */; };
 		DD30315827F4838F0008A4B0 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD30315727F4838F0008A4B0 /* Tab.swift */; };
 		DD30382A281948410047B76E /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD303829281948410047B76E /* AngularButtonStyle.swift */; };
+		DD363C66281FB195009881FA /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD363C65281FB195009881FA /* ModalView.swift */; };
+		DD363C68281FB213009881FA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD363C67281FB213009881FA /* SignInView.swift */; };
 		DD627B9E27F384D7008EDAB5 /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD627B9D27F384D7008EDAB5 /* HexagonView.swift */; };
 		DD627BA027F38C48008EDAB5 /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD627B9F27F38C48008EDAB5 /* BlobView.swift */; };
 		DD89543F27F6303B00157ADD /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89543E27F6303B00157ADD /* CourseItem.swift */; };
@@ -61,6 +63,8 @@
 		DD2EE8BF27BD0F8600C64A24 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		DD30315727F4838F0008A4B0 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		DD303829281948410047B76E /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
+		DD363C65281FB195009881FA /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		DD363C67281FB213009881FA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		DD627B9D27F384D7008EDAB5 /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		DD627B9F27F38C48008EDAB5 /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		DD89543E27F6303B00157ADD /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				DD89544027F6319700157ADD /* CourseView.swift */,
 				DDC288F02816720900380CA0 /* SearchView.swift */,
 				DDCC102F2817ECC200DF8FC5 /* SignUpView.swift */,
+				DD363C65281FB195009881FA /* ModalView.swift */,
+				DD363C67281FB213009881FA /* SignInView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -375,6 +381,7 @@
 				DDB90B8627F5C1C900BF87D7 /* NavigationBar.swift in Sources */,
 				DD30382A281948410047B76E /* AngularButtonStyle.swift in Sources */,
 				DD627BA027F38C48008EDAB5 /* BlobView.swift in Sources */,
+				DD363C68281FB213009881FA /* SignInView.swift in Sources */,
 				DD94912127A2C11F00BE60FC /* ContentView.swift in Sources */,
 				DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */,
 				DD94911F27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift in Sources */,
@@ -387,6 +394,7 @@
 				DDE3611D27FB1E8800113E9B /* Model.swift in Sources */,
 				DD15C09227F4731A00B0F054 /* TabBar.swift in Sources */,
 				DDD2752A27F5D9BC00FCEABD /* AnimatableFontModifier.swift in Sources */,
+				DD363C66281FB195009881FA /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
