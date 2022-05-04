@@ -9,13 +9,13 @@ import SwiftUI
 
 struct SignUpView: View {
     enum Field: Hashable {
-    case email
-    case password
+        case email
+        case password
     }
     
     @State var email = ""
     @State var password = ""
-    @FocusState var focuseField: Field?
+    @FocusState var focusedField: Field?
     @State var circleY: CGFloat = 120
     @State var emailY: CGFloat = 0
     @State var passwordY: CGFloat = 0
@@ -26,36 +26,32 @@ struct SignUpView: View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Sign up")
                 .font(.largeTitle).bold()
-            Text("Access 120+ hours of courses, tutorials and livesteams")
+            Text("Access 12+ hours of courses, tutorials and livestreams")
                 .font(.headline)
-            TextField("Email",text: $email)
+            TextField("Email", text: $email)
                 .inputStyle(icon: "mail")
                 .textContentType(.emailAddress)
                 .keyboardType(.emailAddress)
                 .autocapitalization(.none)
                 .disableAutocorrection(true)
-                .focused($focuseField, equals: .email)
-                .shadow(color: focuseField == .email ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
+                .focused($focusedField, equals: .email)
+                .shadow(color: focusedField == .email ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
                 .overlay(geometry)
-                .onPreferenceChange(CirclePerferenceKey.self){
-                    value in
+                .onPreferenceChange(CirclePreferenceKey.self) { value in
                     emailY = value
                     circleY = value
                 }
-            SecureField("Password",text: $password)
-                .inputStyle(icon:  "lock")
+            SecureField("Password", text: $password)
+                .inputStyle(icon: "lock")
                 .textContentType(.password)
-                .focused($focuseField, equals: .password)
-                .shadow(color: focuseField == .password ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
+                .focused($focusedField, equals: .password)
+                .shadow(color: focusedField == .password ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
                 .overlay(geometry)
-                .onPreferenceChange(CirclePerferenceKey.self){
-                    value in
+                .onPreferenceChange(CirclePreferenceKey.self) { value in
                     passwordY = value
-
                 }
-            
             Button {} label: {
-                Text("Creat an account")
+                Text("Create an account")
                     .frame(maxWidth: .infinity)
             }
             .font(.headline)
@@ -67,41 +63,36 @@ struct SignUpView: View {
             
             Group {
                 Text("By clicking on ")
-                + Text("_Create an account_")
-                    .foregroundColor(.primary.opacity(0.7))
-                + Text(", you agree to our **Terms of Service** and **[Privacy Policy](https?..design.io)**")
+                + Text("_Create an account_").foregroundColor(.primary.opacity(0.7))
+                + Text(", you agree to our **Terms of Service** and **[Privacy Policy](https://designcode.io)**")
                 
                 Divider()
                 
                 HStack {
                     Text("Already have an account?")
-                    Button{
+                    Button {
                         model.selectedModal = .signIn
                     } label: {
-                           Text("**Sign in**")
+                        Text("**Sign in**")
                     }
-
                 }
             }
             .font(.footnote)
             .foregroundColor(.secondary)
             .accentColor(.secondary)
-
-
         }
         .padding(20)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
         .background(
             Circle().fill(circleColor)
-                .frame(width:68 ,height: 68)
+                .frame(width: 68, height: 68)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                 .offset(y: circleY)
         )
         .coordinateSpace(name: "container")
         .strokeStyle(cornerRadious: 30)
-        .onChange(of: focuseField){
-            value in
-            withAnimation{
+        .onChange(of: focusedField) { value in
+            withAnimation {
                 if value == .email {
                     circleY = emailY
                     circleColor = .blue
@@ -110,12 +101,12 @@ struct SignUpView: View {
                     circleColor = .red
                 }
             }
-
         }
     }
-    var geometry:some View{
-        GeometryReader {proxy in
-            Color.clear.preference(key: CirclePerferenceKey.self, value: proxy.frame(in: .named("container")).minY)
+    
+    var geometry: some View {
+        GeometryReader { proxy in
+            Color.clear.preference(key: CirclePreferenceKey.self, value: proxy.frame(in: .named("container")).minY)
         }
     }
 }
@@ -124,7 +115,6 @@ struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             SignUpView()
-                .preferredColorScheme(.light)
                 .environmentObject(Model())
         }
     }
