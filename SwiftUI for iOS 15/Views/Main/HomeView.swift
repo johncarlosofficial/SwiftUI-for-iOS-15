@@ -23,7 +23,6 @@ struct HomeView: View {
             Color("Background").ignoresSafeArea()
             
             ScrollView {
-                
                 scrollDetection
                 
                 featured
@@ -50,11 +49,8 @@ struct HomeView: View {
                     }
                 }
                 .padding(.horizontal, 20)
-                
             }
             .coordinateSpace(name: "scroll")
-            
-            //scrollbar
             .safeAreaInset(edge: .top, content: {
                 Color.clear.frame(height: 70)
             })
@@ -62,41 +58,37 @@ struct HomeView: View {
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
             )
             
-            if show{
+            if show {
                 detail
             }
-            
         }
         .statusBar(hidden: !showStatusBar)
         .onChange(of: show) { newValue in
-            withAnimation(.closeCard){
+            withAnimation(.closeCard) {
                 if newValue {
                     showStatusBar = false
                 } else {
                     showStatusBar = true
                 }
             }
-            
         }
     }
     
     var scrollDetection: some View {
-        GeometryReader{ proxy in
+        GeometryReader { proxy in
 //                Text("\(proxy.frame(in: .named("scroll")).minY)")
             Color.clear.preference(key: ScrollPreferenceKey.self, value: proxy.frame(in: .named("scroll")).minY)
         }
         .frame(height: 0)
         .onPreferenceChange(ScrollPreferenceKey.self, perform: { value in
-            withAnimation(.easeInOut){
+            withAnimation(.easeInOut) {
                 if value < 0 {
                     hasScrolled = true
                 } else {
                     hasScrolled = false
                 }
             }
-            
         })
-
     }
     
     var featured: some View {
@@ -110,22 +102,22 @@ struct HomeView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 40)
                         .rotation3DEffect(.degrees(minX / -10), axis: (x: 0, y: 1, z: 0))
-                        .shadow(color: Color("Shadow").opacity(isLiteMode ? 0 : 0.3), radius: 5, x: 0, y: 10)
-                        .blur(radius: abs(minX/40))
-                        
-                    
+                        .shadow(color: Color("Shadow").opacity(isLiteMode ? 0 : 0.3), radius: 5, x: 0, y: 3)
+                        .blur(radius: abs(minX / 40))
                         .overlay(
                             Image(course.image)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(height: 230)
-                                .offset(x: 32, y: -82)
-                                .offset(x: minX/2)
+                                .offset(x: 32, y: -80)
+                                .offset(x: minX / 2)
                         )
                         .onTapGesture {
                             showCourse = true
                             selectedIndex = index
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityAddTraits(.isButton)
                     
 //                    Text("\(proxy.frame(in: .global).minX)")
                 }
@@ -136,6 +128,7 @@ struct HomeView: View {
         .background(
             Image("Blob 1")
                 .offset(x: 250, y: -100)
+                .accessibility(hidden: true)
         )
         .sheet(isPresented: $showCourse) {
             CourseView(namespace: namespace, course: featuredCourses[selectedIndex], show: $showCourse)
@@ -146,14 +139,15 @@ struct HomeView: View {
         ForEach(courses) { course in
             CourseItem(namespace: namespace, course: course, show: $show)
                 .onTapGesture {
-                    withAnimation(.openCard){
+                    withAnimation(.openCard) {
                         show.toggle()
                         model.showDetail.toggle()
                         showStatusBar = false
                         selectedID = course.id
                     }
-                    
-            }
+                }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(.isButton)
         }
     }
     
@@ -164,7 +158,7 @@ struct HomeView: View {
                     .zIndex(1)
                     .transition(.asymmetric(
                         insertion: .opacity.animation(.easeInOut(duration: 0.1)),
-                        removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                    removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
             }
         }
     }
@@ -173,6 +167,7 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .preferredColorScheme(.dark)
             .environmentObject(Model())
     }
 }

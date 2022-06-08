@@ -13,32 +13,32 @@ struct ContentView: View {
     @EnvironmentObject var model: Model
     
     var body: some View {
-        ZStack(alignment: .bottom){
+        ZStack(alignment: .bottom) {
+            
             switch selectedTab {
             case .home:
                 HomeView()
             case .explore:
-                AccountView()
+                ExploreView()
             case .notifications:
-                AccountView()
+                NotificationsView()
             case .library:
-                AccountView()
+                LibraryView()
             }
-                
+        
             TabBar()
                 .offset(y: model.showDetail ? 200 : 0)
             
             if showModal {
-                ZStack {
-                    ModalView()
-                        .zIndex(1)
-                }
-                
+                ModalView()
+                    .zIndex(1)
+                    .accessibilityAddTraits(.isModal)
             }
         }
-        .safeAreaInset(edge: .bottom, spacing: 0){
-            Color.clear.frame(height: 44)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            Color.clear.frame(height: 88)
         }
+        .dynamicTypeSize(.large ... .xxLarge)
     }
 }
 
@@ -46,6 +46,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ContentView()
+                .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
             ContentView()
                 .preferredColorScheme(.dark)
         }
