@@ -40,7 +40,7 @@ struct TabBar: View {
             .overlay(
                 overlay
             )
-            .strokeStyle(cornerRadious: hasHomeIndicator ? 34 : 0)
+            .strokeStyle(cornerRadius: hasHomeIndicator ? 34 : 0)
             .frame(maxHeight: .infinity, alignment: .bottom)
         .ignoresSafeArea()
         }

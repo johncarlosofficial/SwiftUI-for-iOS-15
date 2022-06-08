@@ -7,18 +7,37 @@
 
 import SwiftUI
 
-struct StrokeStyle: ViewModifier {
-    var cornerRadious: CGFloat = 30.0
+struct TitleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.footnote.weight(.semibold))
+            .foregroundColor(.secondary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(20)
+            .accessibilityAddTraits(.isHeader)
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        modifier(TitleModifier())
+    }
+}
+
+struct StrokeModifier: ViewModifier {
+    var cornerRadius: CGFloat
     @Environment(\.colorScheme) var colorScheme
+    
     func body(content: Content) -> some View {
         content.overlay(
-            RoundedRectangle(cornerRadius: cornerRadious, style: .continuous)
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .stroke(
                     .linearGradient(
                         colors: [
-                            .white.opacity(colorScheme == .dark ? 0.6 : 0.3),
+                            .white.opacity(colorScheme == .dark ? 0.1 : 0.3),
                             .black.opacity(colorScheme == .dark ? 0.3 : 0.1)
-                        ], startPoint: .top, endPoint: .bottom)
+                        ], startPoint: .top, endPoint: .bottom
+                    )
                 )
                 .blendMode(.overlay)
         )
@@ -26,7 +45,7 @@ struct StrokeStyle: ViewModifier {
 }
 
 extension View {
-    func strokeStyle(cornerRadious: CGFloat = 30) -> some View {
-        modifier(StrokeStyle(cornerRadious: cornerRadious))
+    func strokeStyle(cornerRadius: CGFloat = 30) -> some View {
+        modifier(StrokeModifier(cornerRadius: cornerRadius))
     }
 }

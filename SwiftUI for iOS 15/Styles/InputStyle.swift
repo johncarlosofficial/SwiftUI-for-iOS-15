@@ -16,7 +16,7 @@ struct InputStyle: ViewModifier {
             .padding(.leading, 40)
             .background(.thinMaterial)
             .mask(RoundedRectangle(cornerRadius: 20))
-            .strokeStyle(cornerRadious: 20)
+            .strokeStyle(cornerRadius: 20)
             .overlay(
                 Image(systemName: icon)
                     .frame(width: 36, height: 36)

@@ -22,7 +22,7 @@ struct SearchView: View {
                 }
                 .padding(20)
                 .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-                .strokeStyle(cornerRadious: 30)
+                .strokeStyle(cornerRadius: 30)
                 .padding(20)
                 .background(
                     Rectangle()

@@ -97,7 +97,7 @@ struct SignInView: View {
                 .offset(y: circleY)
         )
         .coordinateSpace(name: "container")
-        .strokeStyle(cornerRadious: 30)
+        .strokeStyle(cornerRadius: 30)
         .onChange(of: focusedField) { value in
             withAnimation {
                 if value == .email {

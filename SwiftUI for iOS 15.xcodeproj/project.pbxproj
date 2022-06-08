@@ -22,6 +22,10 @@
 		DD89543F27F6303B00157ADD /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89543E27F6303B00157ADD /* CourseItem.swift */; };
 		DD89544127F6319700157ADD /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89544027F6319700157ADD /* CourseView.swift */; };
 		DD89544327F63D5A00157ADD /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89544227F63D5A00157ADD /* Animations.swift */; };
+		DD8BA89728501AB900395B54 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BA89628501AB900395B54 /* CircularView.swift */; };
+		DD8BA89928501C8F00395B54 /* CourseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BA89828501C8F00395B54 /* CourseSection.swift */; };
+		DD8BA89B28501CEB00395B54 /* SectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BA89A28501CEB00395B54 /* SectionRow.swift */; };
+		DD8BA89D28501FFD00395B54 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8BA89C28501FFD00395B54 /* SectionView.swift */; };
 		DD94911F27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94911E27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift */; };
 		DD94912127A2C11F00BE60FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94912027A2C11F00BE60FC /* ContentView.swift */; };
 		DD94912327A2C12000BE60FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD94912227A2C12000BE60FC /* Assets.xcassets */; };
@@ -76,6 +80,10 @@
 		DD89543E27F6303B00157ADD /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		DD89544027F6319700157ADD /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		DD89544227F63D5A00157ADD /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		DD8BA89628501AB900395B54 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		DD8BA89828501C8F00395B54 /* CourseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSection.swift; sourceTree = "<group>"; };
+		DD8BA89A28501CEB00395B54 /* SectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionRow.swift; sourceTree = "<group>"; };
+		DD8BA89C28501FFD00395B54 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		DD94911B27A2C11F00BE60FC /* SwiftUI for iOS 15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI for iOS 15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94911E27A2C11F00BE60FC /* SwiftUI_for_iOS_15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_for_iOS_15App.swift; sourceTree = "<group>"; };
 		DD94912027A2C11F00BE60FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -214,6 +222,7 @@
 				DD89544027F6319700157ADD /* CourseView.swift */,
 				DDC288F02816720900380CA0 /* SearchView.swift */,
 				DD363C69281FBA64009881FA /* Modals */,
+				DD8BA89C28501FFD00395B54 /* SectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +235,8 @@
 				DD627B9D27F384D7008EDAB5 /* HexagonView.swift */,
 				DDB90B8327F5BFC900BF87D7 /* FeaturedItem.swift */,
 				DD89543E27F6303B00157ADD /* CourseItem.swift */,
+				DD8BA89628501AB900395B54 /* CircularView.swift */,
+				DD8BA89A28501CEB00395B54 /* SectionRow.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -240,6 +251,7 @@
 				DDC288F22816799100380CA0 /* Suggestion.swift */,
 				DD6B5672284FA86700F7F579 /* Address.swift */,
 				DD6B5674284FAA8600F7F579 /* Coin.swift */,
+				DD8BA89828501C8F00395B54 /* CourseSection.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -388,6 +400,7 @@
 			files = (
 				DDC288F12816720900380CA0 /* SearchView.swift in Sources */,
 				DDB90B7D27F5BADD00BF87D7 /* HomeView.swift in Sources */,
+				DD8BA89D28501FFD00395B54 /* SectionView.swift in Sources */,
 				DD2EE8C027BD0F8600C64A24 /* AccountView.swift in Sources */,
 				DD89544127F6319700157ADD /* CourseView.swift in Sources */,
 				DD627B9E27F384D7008EDAB5 /* HexagonView.swift in Sources */,
@@ -401,6 +414,8 @@
 				DD30382A281948410047B76E /* AngularButtonStyle.swift in Sources */,
 				DD627BA027F38C48008EDAB5 /* BlobView.swift in Sources */,
 				DD363C68281FB213009881FA /* SignInView.swift in Sources */,
+				DD8BA89728501AB900395B54 /* CircularView.swift in Sources */,
+				DD8BA89928501C8F00395B54 /* CourseSection.swift in Sources */,
 				DD6B5675284FAA8600F7F579 /* Coin.swift in Sources */,
 				DD94912127A2C11F00BE60FC /* ContentView.swift in Sources */,
 				DDD2752C27F5DE2600FCEABD /* Course.swift in Sources */,
@@ -408,6 +423,7 @@
 				DD89543F27F6303B00157ADD /* CourseItem.swift in Sources */,
 				DDB90B8427F5BFC900BF87D7 /* FeaturedItem.swift in Sources */,
 				DDCC10302817ECC200DF8FC5 /* SignUpView.swift in Sources */,
+				DD8BA89B28501CEB00395B54 /* SectionRow.swift in Sources */,
 				DD89544327F63D5A00157ADD /* Animations.swift in Sources */,
 				DDB90B8827F5CF6400BF87D7 /* PreferenceKeys.swift in Sources */,
 				DDD9C295281E68DB0023B997 /* InputStyle.swift in Sources */,

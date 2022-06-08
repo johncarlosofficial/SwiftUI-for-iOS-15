@@ -54,7 +54,7 @@ struct AngularButtonStyle: ButtonStyle {
                     .fill(.angularGradient(colors: [.pink, .purple, .blue, .pink], center: .center, startAngle: .degrees(-90), endAngle: .degrees(270)))
                     .blur(radius: cornerRadius)
             )
-            .strokeStyle(cornerRadious: cornerRadius)
+            .strokeStyle(cornerRadius: cornerRadius)
     }
 }
 
